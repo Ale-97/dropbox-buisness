@@ -53,7 +53,7 @@ text-align: right;
 nav a {
     color: black;
 }
-ul:last-child li:last-of-type a,.content-left > a {
+nav ul:last-child li:last-of-type a,.content-left > a {
     background-color: rgb(0, 97, 255);
     padding: 7px 12px;
     color: white;
@@ -230,7 +230,8 @@ position: relative;
     padding: 10px;
     color: black;
 }
-/* Sezione-3 */
+
+/*--- Sezione-3 ---*/
 .section3{
     width: 1000px;
 }
@@ -257,11 +258,11 @@ position: relative;
 .top,.bottom{
     margin-bottom: 100px;
 }
-/* Sezione4 */
+
+/*--- Sezione-4 ---*/
 .section4{
     width: 1200px;
     margin: 0 auto;
-    margin-bottom: 1000px;
 } 
 .father-box{
     width: calc(100% / 3);
@@ -309,7 +310,6 @@ position: relative;
     background-color: rgb(255, 216, 48 );
     border: 10px solid rgb(255, 235, 152);
 }
-
 .simbolo{
     width: 80px;
     margin: 20px 0;
@@ -340,4 +340,55 @@ font-size: 30px;
     padding: 10px;
     background: white;
     margin-left: 50px;
+}
+/*--- Sezione-5 ---*/
+.section5{
+    width: 900px;
+    margin: 100px auto;
+}
+.section5 div{
+    padding: 30px 0;
+    border-bottom:1px solid black; ;
+}
+.section5 div:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.section5 span{
+float: right;
+}
+/*--- Footer ---*/
+footer{
+    background-color: black;
+    color: white;
+}
+.container-footer{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+.container-link > div{
+    width: calc(100%/5);
+}
+footer li{
+    list-style: none;
+    margin: 20px 0;
+}
+footer li:first-child{
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer a{
+    color: white;
+}
+
+.container-link + div{
+    width: 80px;
+    border-bottom: 2px solid lightgray;
+    margin:50px 0 30px 0;
+}
+.container-footer > div:last-child{
+    color: gray;
 }
