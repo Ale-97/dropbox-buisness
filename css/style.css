@@ -4,6 +4,8 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+
 /* Utility */
 .fl {
     float: left;
@@ -13,16 +15,25 @@
 }
 a{
     text-decoration: none;
-    color: black;
 }
-/* Header */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*--- Header ---*/
 header{
     width: 100%;
     height: 600px;
+    background-color: rgb(180, 208, 231);
 }
+/* Nav-Bar */
 nav{
     padding: 20px 10px;
     height: 70px;
+    background-color: white;
 }
 header > nav li{
     display: inline-block;
@@ -39,8 +50,294 @@ header ul{
 header ul:last-child{
 text-align: right;
 }
-ul:last-child li:last-of-type{
-    background-color: rgb(36, 90, 238);
+nav a {
+    color: black;
+}
+ul:last-child li:last-of-type a,.content-left > a {
+    background-color: rgb(0, 97, 255);
+    padding: 7px 12px;
     color: white;
-    padding: 0 10px;
+}
+/* Contenuto header */
+header > .container {
+    height: 100%;
+    width: 1100px;
+    margin: 0 auto;
+}
+header .title {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 30px 0 20px 0;
+}
+header .content-left{
+width: 30%;
+}
+header .content-right{
+    width: 70%;
+}
+header .content-right img{
+   width: 100%;
+}
+header .content-left > .button {
+    display: inline-block;
+    margin: 20px 0 10px 0;
+}
+header .button + div{
+ font-size: small;
+ margin-bottom: 20px;
+}
+.arrow{
+    font-size: 40px;
+}
+
+
+/*--- Sezione1 ---*/
+section{
+    margin: 200px auto;
+    width: 1100px;
+} 
+.title-section1{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0 0 30px 0;
+}
+.section-1 > label{
+    margin: 0 10px 0 0;
+}
+.tariffe{
+    margin: 20px 0 0 0;
+}
+.tariffe > div[class^="box-"]{
+    width: calc(100% / 3 - 20px);
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+.box-center{
+    margin: 0 30px;
+}
+.tariffa{
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    text-align: center;
+}
+.content-box{
+    padding: 20px 20px 0 20px;
+}
+.tariffe ul {
+    list-style: none;
+}
+.title-box{
+    font-size: 25px;
+    font-weight: bold;
+}
+.costo{
+    margin: 8px 0;
+    font-weight: bold;
+}
+.costo + div{
+    width: 50%;
+    height: 100px;
+    color: gray;
+}
+.specifiche{
+    height: 200px;
+}
+.specifiche > li{
+    padding: 10px 0;
+}
+.button-prova,.super-box .content-right{
+    background-color: rgb(0, 97, 255);
+    text-align: center;
+    padding: 10px 0;
+}
+.button-prova{
+    margin:40px 0 20px 0 ;
+}
+.button-prova > a,.super-box  a{
+    color: white;
+} 
+.link-standard{
+    color: rgb(0, 110, 255);
+    border-bottom: 1px solid rgb(0, 110, 255) ;
+}
+.content-box > span{
+    display: inline-block;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+.title-2{
+    font-size: 20px;
+    font-weight: 800;
+}
+.vantaggi{
+    height: 350px;
+}
+.vantaggi span{
+    color: blue;
+    font-weight: 800;
+}
+.vantaggi > li{
+    margin: 10px 0;
+}
+.super-box{
+    border: 1px solid black;
+    width: 100%;
+}
+.tariffa + div{
+    padding: 30px;
+
+}
+.super-box .content-left{
+    width: 75%;
+}
+.super-box .content-right{
+    width: 25%;
+}
+.title-box + div{
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*--- sezione2 ---*/
+.section2 > div[class^="conteiner"]{
+    width: calc(100% / 2);
+}
+.section2 img{
+    width: 100%;
+}
+.conteiner-right{
+height: 470px;
+position: relative;
+}
+.conteiner-right > div{
+    width: 80%;
+    transform: translate(0, -50%);
+    position: absolute;
+    top: 50%;
+    padding-left: 60px;
+}
+.title-section2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.title-section2 + div{
+    margin-bottom: 40px;
+}
+.section2 a {
+    border: 1px solid black;
+    padding: 10px;
+    color: black;
+}
+/* Sezione-3 */
+.section3{
+    width: 1000px;
+}
+.title-section3{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+.section3 div[class^="box"]{
+    width: calc(100% / 3 - 30px);
+}
+.section3 div[class^="box"] img{
+    width: 100%;
+    text-align: center;
+}
+.section3 .box-center{
+    margin: 0 40px;
+} 
+.section3 .sub-title{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.top,.bottom{
+    margin-bottom: 100px;
+}
+/* Sezione4 */
+.section4{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 1000px;
+} 
+.father-box{
+    width: calc(100% / 3);
+    height: 400px;
+}
+.center{
+    background-color: rgb(238, 237, 237);
+    padding: 35px;
+}
+.section4 div[class^="box-"]{
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    position: relative;
+}
+.section4 div[class^="box-"] img{
+    width: 60%;
+    filter: invert(100%) ;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.box-logo1{
+    background-color: rgb(162, 211, 155);
+}
+.box-logo2{
+    background-color: rgb(97, 8, 43);
+}
+.box-logo3{
+    background-color: rgb(0, 147, 206 );
+}
+.box-logo4{
+    background-color: rgb(255, 28, 28 );
+}
+.box-logo5{
+    background-color: rgb(213, 0, 31);
+}
+.box-logo6{
+    background-color: rgb(180, 208, 231);
+}
+.box-logo7{
+    background-color: rgb(13, 36, 129 );
+}
+.box-logo8{
+    background-color: rgb(255, 216, 48 );
+    border: 10px solid rgb(255, 235, 152);
+}
+
+.simbolo{
+    width: 80px;
+    margin: 20px 0;
+}
+.simbolo + div{
+    width: 40px;
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 20px;
+}
+.autore{
+    font-size: 14px;
+    margin: 20px 0;
+}
+.bottom-logo{
+    width:100%;
+    background-color: rgb(180, 208, 231 );
+    color: rgb(97, 8, 43);
+    padding: 80px;
+    text-align: center;
+}
+.bottom-logo > div{
+display: inline-block;
+font-weight: bold;
+font-size: 30px;
+}
+.bottom-logo > a{
+    color: black;
+    padding: 10px;
+    background: white;
+    margin-left: 50px;
 }
