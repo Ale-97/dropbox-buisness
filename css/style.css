@@ -235,6 +235,7 @@ position: relative;
 
 /*--- Sezione-3 ---*/
 .section3{
+    margin: 200px auto 50px auto;
     width: 1000px;
 }
 .title-3{
@@ -262,7 +263,7 @@ position: relative;
 }
 .bottom-3 + div {
     width: 65%;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
 }
 .bottom-3 + div > div{
     font-size: 45px;
