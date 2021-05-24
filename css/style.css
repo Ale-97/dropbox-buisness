@@ -277,7 +277,7 @@ position: relative;
 /*--- Sezione-4 ---*/
 .father-box{
     width: calc(100% / 3);
-    height: 600px;
+    height: calc(100vw / 3);
 }
 .center{
     background-color: rgb(238, 237, 237);
